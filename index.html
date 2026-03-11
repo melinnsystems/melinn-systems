@@ -1,64 +1,564 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Melinn Systems</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Melinn Systems | Custom Software & Automation Solutions</title>
+<meta name="description" content="Melinn Systems builds custom software, automation systems, and modern web applications for businesses. Transform your operations with intelligent technology.">
+<link rel="icon" href="logo.png" type="image/png">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
-<header>
-    <nav>
-        <h1>Melinn Systems</h1>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+<!-- Navigation -->
+<header class="header">
+<div class="container">
+<nav class="nav">
+<a href="#" class="logo-container">
+<img src="logo.png" alt="Melinn Systems Logo" class="logo-img">
+<span class="logo-text">Melinn Systems</span>
+</a>
+<ul class="nav-menu">
+<li><a href="#services" class="nav-link">Services</a></li>
+<li><a href="#work" class="nav-link">Work</a></li>
+<li><a href="#process" class="nav-link">Process</a></li>
+<li><a href="#about" class="nav-link">About</a></li>
+<li><a href="#contact" class="nav-link nav-link-primary">Get Started</a></li>
+</ul>
+<button class="mobile-toggle" aria-label="Toggle menu">
+<span></span>
+<span></span>
+<span></span>
+</button>
+</nav>
+</div>
 </header>
 
+<!-- Hero Section -->
 <section class="hero">
-    <h2>Engineering Digital Solutions</h2>
-    <p>We build modern software, automation systems, and web applications for businesses.</p>
-    <button>Get Started</button>
+<div class="hero-background"></div>
+<div class="container">
+<div class="hero-content">
+<div class="hero-badge">
+<span class="badge-dot"></span>
+<span>Building Digital Infrastructure</span>
+</div>
+<h1 class="hero-title">
+Engineering Solutions<br>
+<span class="gradient-text">That Scale</span>
+</h1>
+<p class="hero-description">
+We design intelligent software, automation systems, and modern web platforms 
+that transform how businesses operate. From concept to deployment, we build 
+technology that drives real growth.
+</p>
+<div class="hero-actions">
+<a href="#contact" class="btn btn-primary">Start Your Project</a>
+<a href="#work" class="btn btn-secondary">View Our Work</a>
+</div>
+<div class="hero-stats">
+<div class="stat">
+<div class="stat-number" data-target="50">0</div>
+<div class="stat-label">Projects Delivered</div>
+</div>
+<div class="stat">
+<div class="stat-number" data-target="98">0</div>
+<div class="stat-label">Client Satisfaction</div>
+</div>
+<div class="stat">
+<div class="stat-number" data-target="24">0</div>
+<div class="stat-label">Avg. Response Time (hrs)</div>
+</div>
+</div>
+</div>
+</div>
 </section>
 
-<section class="services">
-    <h2>Our Services</h2>
+<!-- Services Section -->
+<section id="services" class="section services">
+<div class="container">
+<div class="section-header">
+<span class="section-label">What We Do</span>
+<h2 class="section-title">Services Built for Growth</h2>
+<p class="section-description">
+Comprehensive digital solutions tailored to your business needs
+</p>
+</div>
 
-    <div class="service">
-        <h3>Custom Software</h3>
-        <p>We develop tailored software solutions for businesses.</p>
-    </div>
+<div class="services-grid">
+<div class="service-card" data-aos="fade-up">
+<div class="service-icon">
+<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<rect x="2" y="3" width="20" height="14" rx="2"/>
+<line x1="8" y1="21" x2="16" y2="21"/>
+<line x1="12" y1="17" x2="12" y2="21"/>
+</svg>
+</div>
+<h3 class="service-title">Custom Software Development</h3>
+<p class="service-description">
+Powerful, tailored software solutions designed specifically for your business workflows
+</p>
+<ul class="service-features">
+<li>Internal dashboards & tools</li>
+<li>CRM & management systems</li>
+<li>Business intelligence platforms</li>
+<li>Legacy system modernization</li>
+</ul>
+<div class="service-link">
+<a href="#contact">Learn more →</a>
+</div>
+</div>
 
-    <div class="service">
-        <h3>Web Applications</h3>
-        <p>Modern, scalable web applications and dashboards.</p>
-    </div>
+<div class="service-card" data-aos="fade-up" data-aos-delay="100">
+<div class="service-icon">
+<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<circle cx="12" cy="12" r="10"/>
+<path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/>
+</svg>
+</div>
+<h3 class="service-title">Web Applications</h3>
+<p class="service-description">
+Modern, responsive web platforms that deliver exceptional user experiences
+</p>
+<ul class="service-features">
+<li>SaaS platforms & marketplaces</li>
+<li>Client portals & dashboards</li>
+<li>Progressive web apps (PWAs)</li>
+<li>E-commerce solutions</li>
+</ul>
+<div class="service-link">
+<a href="#contact">Learn more →</a>
+</div>
+</div>
 
-    <div class="service">
-        <h3>Automation</h3>
-        <p>Automate workflows and improve efficiency.</p>
-    </div>
+<div class="service-card" data-aos="fade-up" data-aos-delay="200">
+<div class="service-icon">
+<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M12 2L2 7l10 5 10-5-10-5z"/>
+<path d="M2 17l10 5 10-5"/>
+<path d="M2 12l10 5 10-5"/>
+</svg>
+</div>
+<h3 class="service-title">Process Automation</h3>
+<p class="service-description">
+Intelligent automation that eliminates repetitive tasks and accelerates workflows
+</p>
+<ul class="service-features">
+<li>Workflow automation</li>
+<li>Data scraping & aggregation</li>
+<li>Report generation</li>
+<li>API integrations</li>
+</ul>
+<div class="service-link">
+<a href="#contact">Learn more →</a>
+</div>
+</div>
+</div>
+</div>
 </section>
 
-<section class="about">
-    <h2>About Melinn Systems</h2>
-    <p>Melinn Systems builds reliable digital systems that help businesses grow and operate efficiently.</p>
+<!-- Portfolio/Work Section -->
+<section id="work" class="section portfolio">
+<div class="container">
+<div class="section-header">
+<span class="section-label">Our Work</span>
+<h2 class="section-title">Recent Projects</h2>
+<p class="section-description">
+Real solutions delivering measurable results
+</p>
+</div>
+
+<div class="portfolio-grid">
+<div class="portfolio-item" data-aos="fade-up">
+<div class="portfolio-image">
+<div class="portfolio-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+<svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5">
+<rect x="3" y="3" width="18" height="18" rx="2"/>
+<path d="M3 9h18"/>
+<path d="M9 21V9"/>
+</svg>
+</div>
+</div>
+<div class="portfolio-content">
+<div class="portfolio-category">Custom Software</div>
+<h3 class="portfolio-title">Real-Time Analytics Dashboard</h3>
+<p class="portfolio-description">
+Built a comprehensive analytics platform for a retail chain, processing 50K+ daily transactions with real-time reporting and predictive insights.
+</p>
+<div class="portfolio-metrics">
+<div class="metric">
+<span class="metric-value">40%</span>
+<span class="metric-label">Time Saved</span>
+</div>
+<div class="metric">
+<span class="metric-value">3x</span>
+<span class="metric-label">Faster Insights</span>
+</div>
+</div>
+</div>
+</div>
+
+<div class="portfolio-item" data-aos="fade-up" data-aos-delay="100">
+<div class="portfolio-image">
+<div class="portfolio-placeholder" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+<svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5">
+<rect x="5" y="2" width="14" height="20" rx="2"/>
+<path d="M12 18h.01"/>
+</svg>
+</div>
+</div>
+<div class="portfolio-content">
+<div class="portfolio-category">Web Application</div>
+<h3 class="portfolio-title">Appointment Booking Platform</h3>
+<p class="portfolio-description">
+Developed a multi-location scheduling system with automated reminders, payment processing, and customer management for a healthcare network.
+</p>
+<div class="portfolio-metrics">
+<div class="metric">
+<span class="metric-value">85%</span>
+<span class="metric-label">No-Show Reduction</span>
+</div>
+<div class="metric">
+<span class="metric-value">10K+</span>
+<span class="metric-label">Monthly Bookings</span>
+</div>
+</div>
+</div>
+</div>
+
+<div class="portfolio-item" data-aos="fade-up" data-aos-delay="200">
+<div class="portfolio-image">
+<div class="portfolio-placeholder" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+<svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5">
+<path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+<polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+<line x1="12" y1="22.08" x2="12" y2="12"/>
+</svg>
+</div>
+</div>
+<div class="portfolio-content">
+<div class="portfolio-category">Automation</div>
+<h3 class="portfolio-title">Inventory Management System</h3>
+<p class="portfolio-description">
+Automated inventory tracking with real-time stock updates, supplier integrations, and predictive reordering for an e-commerce distributor.
+</p>
+<div class="portfolio-metrics">
+<div class="metric">
+<span class="metric-value">60%</span>
+<span class="metric-label">Cost Reduction</span>
+</div>
+<div class="metric">
+<span class="metric-value">99.8%</span>
+<span class="metric-label">Accuracy Rate</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </section>
 
-<section class="contact">
-    <h2>Contact Us</h2>
-    <p>Email: hello@melinnsystems.com</p>
+<!-- Technology Stack -->
+<section class="section tech-stack">
+<div class="container">
+<div class="section-header">
+<span class="section-label">Technology</span>
+<h2 class="section-title">Built With Modern Tools</h2>
+</div>
+
+<div class="tech-grid">
+<div class="tech-item" data-aos="zoom-in" data-aos-delay="0">React</div>
+<div class="tech-item" data-aos="zoom-in" data-aos-delay="50">Node.js</div>
+<div class="tech-item" data-aos="zoom-in" data-aos-delay="100">Python</div>
+<div class="tech-item" data-aos="zoom-in" data-aos-delay="150">TypeScript</div>
+<div class="tech-item" data-aos="zoom-in" data-aos-delay="200">PostgreSQL</div>
+<div class="tech-item" data-aos="zoom-in" data-aos-delay="250">AWS</div>
+<div class="tech-item" data-aos="zoom-in" data-aos-delay="300">Docker</div>
+<div class="tech-item" data-aos="zoom-in" data-aos-delay="350">Next.js</div>
+</div>
+</div>
 </section>
 
-<footer>
-    <p>© 2026 Melinn Systems</p>
+<!-- Process Section -->
+<section id="process" class="section process">
+<div class="container">
+<div class="section-header">
+<span class="section-label">How We Work</span>
+<h2 class="section-title">Our Process</h2>
+<p class="section-description">
+A proven approach that delivers results
+</p>
+</div>
+
+<div class="process-timeline">
+<div class="process-step" data-aos="fade-right">
+<div class="process-number">01</div>
+<div class="process-content">
+<h3>Discovery & Planning</h3>
+<p>We dive deep into your business needs, technical requirements, and goals to create a comprehensive project roadmap.</p>
+</div>
+</div>
+
+<div class="process-step" data-aos="fade-right" data-aos-delay="100">
+<div class="process-number">02</div>
+<div class="process-content">
+<h3>Design & Architecture</h3>
+<p>Our team designs intuitive interfaces and robust system architectures that prioritize scalability and user experience.</p>
+</div>
+</div>
+
+<div class="process-step" data-aos="fade-right" data-aos-delay="200">
+<div class="process-number">03</div>
+<div class="process-content">
+<h3>Development & Testing</h3>
+<p>Agile development with continuous integration, rigorous testing, and regular updates to ensure quality at every stage.</p>
+</div>
+</div>
+
+<div class="process-step" data-aos="fade-right" data-aos-delay="300">
+<div class="process-number">04</div>
+<div class="process-content">
+<h3>Deployment & Support</h3>
+<p>Smooth launch with comprehensive training, documentation, and ongoing support to ensure long-term success.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Testimonials -->
+<section class="section testimonials">
+<div class="container">
+<div class="section-header">
+<span class="section-label">Client Stories</span>
+<h2 class="section-title">What Our Clients Say</h2>
+</div>
+
+<div class="testimonials-grid">
+<div class="testimonial-card" data-aos="fade-up">
+<div class="testimonial-stars">★★★★★</div>
+<p class="testimonial-text">
+"Melinn Systems transformed our operations with a custom CRM that perfectly fits our workflow. Response times improved by 45% and our team couldn't be happier."
+</p>
+<div class="testimonial-author">
+<div class="author-info">
+<div class="author-name">Sarah Mitchell</div>
+<div class="author-role">Operations Director, TechFlow Inc.</div>
+</div>
+</div>
+</div>
+
+<div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+<div class="testimonial-stars">★★★★★</div>
+<p class="testimonial-text">
+"The automation system they built saved us countless hours every week. What used to take days now happens automatically. Exceptional work and great communication."
+</p>
+<div class="testimonial-author">
+<div class="author-info">
+<div class="author-name">Marcus Chen</div>
+<div class="author-role">CEO, DataStream Solutions</div>
+</div>
+</div>
+</div>
+
+<div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+<div class="testimonial-stars">★★★★★</div>
+<p class="testimonial-text">
+"Professional, responsive, and technically excellent. They delivered our web platform ahead of schedule and it's been rock-solid since launch."
+</p>
+<div class="testimonial-author">
+<div class="author-info">
+<div class="author-name">Jennifer Rodriguez</div>
+<div class="author-role">Founder, Velocity Markets</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="section about">
+<div class="container">
+<div class="about-content">
+<div class="about-text" data-aos="fade-right">
+<span class="section-label">About Us</span>
+<h2 class="section-title">Building Technology That Matters</h2>
+<p>
+Melinn Systems was founded on the belief that great software should be accessible 
+to businesses of all sizes. We combine technical excellence with deep business 
+understanding to deliver solutions that drive real growth.
+</p>
+<p>
+Our team brings together expertise in modern web development, automation, and 
+system architecture. We don't just write code—we solve problems and build 
+partnerships that last.
+</p>
+<div class="about-values">
+<div class="value-item">
+<h4>Quality First</h4>
+<p>Every project receives our full attention and commitment to excellence</p>
+</div>
+<div class="value-item">
+<h4>Clear Communication</h4>
+<p>Transparent processes and regular updates keep you informed</p>
+</div>
+<div class="value-item">
+<h4>Long-term Partnership</h4>
+<p>We're here for the journey, not just the launch</p>
+</div>
+</div>
+</div>
+<div class="about-visual" data-aos="fade-left">
+<div class="about-image-placeholder">
+<svg width="100%" height="100%" viewBox="0 0 400 500" fill="none">
+<rect width="400" height="500" fill="url(#aboutGradient)"/>
+<circle cx="200" cy="250" r="80" stroke="#2FA67A" stroke-width="2" opacity="0.3"/>
+<circle cx="200" cy="250" r="120" stroke="#2FA67A" stroke-width="2" opacity="0.2"/>
+<circle cx="200" cy="250" r="160" stroke="#2FA67A" stroke-width="2" opacity="0.1"/>
+<defs>
+<linearGradient id="aboutGradient" x1="0" y1="0" x2="400" y2="500">
+<stop offset="0%" stop-color="#0F2F2A"/>
+<stop offset="100%" stop-color="#2FA67A"/>
+</linearGradient>
+</defs>
+</svg>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="section contact">
+<div class="container">
+<div class="contact-wrapper">
+<div class="contact-info" data-aos="fade-right">
+<span class="section-label">Get In Touch</span>
+<h2 class="section-title">Let's Build Something Great</h2>
+<p>
+Ready to transform your business with custom software? We'd love to hear about 
+your project and explore how we can help.
+</p>
+<div class="contact-details">
+<div class="contact-item">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+<polyline points="22,6 12,13 2,6"/>
+</svg>
+<div>
+<div class="contact-label">Email</div>
+<a href="mailto:melinnsystems.tech@gmail.com" class="contact-value-link">melinnsystems.tech@gmail.com</a>
+</div>
+</div>
+<div class="contact-item">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+</svg>
+<div>
+<div class="contact-label">Response Time</div>
+<div class="contact-value">Within 24 hours</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="contact-form-container" data-aos="fade-left">
+<form class="contact-form" action="https://formspree.io/f/yourformid" method="POST">
+<div class="form-group">
+<label for="name">Your Name</label>
+<input type="text" id="name" name="name" required>
+</div>
+<div class="form-group">
+<label for="email">Email Address</label>
+<input type="email" id="email" name="email" required>
+</div>
+<div class="form-group">
+<label for="company">Company (Optional)</label>
+<input type="text" id="company" name="company">
+</div>
+<div class="form-group">
+<label for="service">Interested In</label>
+<select id="service" name="service">
+<option>Custom Software Development</option>
+<option>Web Application</option>
+<option>Process Automation</option>
+<option>Not Sure Yet</option>
+</select>
+</div>
+<div class="form-group">
+<label for="message">Tell Us About Your Project</label>
+<textarea id="message" name="message" rows="4" required></textarea>
+</div>
+<button type="submit" class="btn btn-primary btn-full">Send Message</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+<div class="container">
+<div class="footer-content">
+<div class="footer-brand">
+<a href="#" class="footer-logo">
+<img src="logo.png" alt="Melinn Systems Logo" class="logo-img">
+<span class="logo-text">Melinn Systems</span>
+</a>
+<p class="footer-tagline">Engineering digital solutions that scale</p>
+<div class="footer-social">
+<a href="https://www.linkedin.com/company/melinn-systems" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+<path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+</svg>
+</a>
+<a href="https://github.com/melinn-systems" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+<path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+</svg>
+</a>
+<a href="mailto:melinnsystems.tech@gmail.com" class="social-link" title="Email">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+<polyline points="22,6 12,13 2,6"/>
+</svg>
+</a>
+</div>
+</div>
+<div class="footer-column">
+<h4>Services</h4>
+<ul>
+<li><a href="#services">Custom Software</a></li>
+<li><a href="#services">Web Applications</a></li>
+<li><a href="#services">Automation</a></li>
+</ul>
+</div>
+<div class="footer-column">
+<h4>Company</h4>
+<ul>
+<li><a href="#about">About Us</a></li>
+<li><a href="#work">Our Work</a></li>
+<li><a href="#process">Process</a></li>
+</ul>
+</div>
+<div class="footer-column">
+<h4>Connect</h4>
+<ul>
+<li><a href="#contact">Contact</a></li>
+<li><a href="https://www.linkedin.com/company/melinn-systems" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+<li><a href="https://github.com/melinn-systems" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<p>&copy; 2026 Melinn Systems. All rights reserved.</p>
+</div>
+</div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
