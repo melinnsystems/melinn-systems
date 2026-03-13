@@ -403,7 +403,7 @@ technology that drives real growth.
 </svg>
 <div>
 <div class="contact-label">Email</div>
-<a href="#" class="contact-value-link" data-email="melinnsystems.tech" data-domain="gmail.com" onclick="this.href='mailto:'+this.dataset.email+'@'+this.dataset.domain;return true;"><span class="__cf_email__" data-cfemail="f69b939a9f9898858f8582939b85d88293959eb6919b979f9ad895999b">[email&#160;protected]</span></a>
+<a href="#" class="contact-value-link" data-email="melinnsystems.tech" data-domain="gmail.com" onclick="this.href='mailto:'+this.dataset.email+'@'+this.dataset.domain;return true;" id="contact-email-link">melinnsystems.tech<span>&#64;</span>gmail.com</a>
 </div>
 </div>
 <div class="contact-item">
@@ -522,7 +522,7 @@ technology that drives real growth.
 </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="script.js"></script>
+<script src="script.js"></script>
 
 <!-- Web3Forms submission script -->
 <script>
@@ -548,34 +548,42 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
     message: form.querySelector('[name="message"]').value
   });
 
-  fetch('https://api.web3forms.com/submit', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-    body: payload
-  })
-  .then(function(res) { return res.json(); })
-  .then(function(json) {
-    if (json.success === true) {
-      submitBtn.textContent = '\u2713 Message Sent!';
-      submitBtn.style.background = '#2FA67A';
-      submitBtn.style.color = 'white';
-      formResult.textContent = "Thank you! We'll be in touch within 24 hours.";
-      formResult.className = 'form-result form-result--success';
-      form.reset();
-      setTimeout(function() {
-        submitBtn.textContent = 'Send Message';
-        submitBtn.disabled = false;
-        submitBtn.style.cssText = '';
-        formResult.textContent = '';
-        formResult.className = 'form-result';
-      }, 5000);
-    } else {
+  var xhr = new XMLHttpRequest();
+  xhr.open('POST', 'https://api.web3forms.com/submit', true);
+  xhr.setRequestHeader('Content-Type', 'application/json');
+  xhr.setRequestHeader('Accept', 'application/json');
+
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState !== 4) return;
+    try {
+      var json = JSON.parse(xhr.responseText);
+      if (xhr.status === 200 && json.success === true) {
+        submitBtn.textContent = '\u2713 Message Sent!';
+        submitBtn.style.background = '#2FA67A';
+        submitBtn.style.color = 'white';
+        formResult.textContent = "Thank you! We'll be in touch within 24 hours.";
+        formResult.className = 'form-result form-result--success';
+        form.reset();
+        setTimeout(function() {
+          submitBtn.textContent = 'Send Message';
+          submitBtn.disabled = false;
+          submitBtn.style.cssText = '';
+          formResult.textContent = '';
+          formResult.className = 'form-result';
+        }, 5000);
+      } else {
+        showFormError(submitBtn, formResult);
+      }
+    } catch(e) {
       showFormError(submitBtn, formResult);
     }
-  })
-  .catch(function() {
+  };
+
+  xhr.onerror = function() {
     showFormError(submitBtn, formResult);
-  });
+  };
+
+  xhr.send(payload);
 });
 
 function showFormError(submitBtn, formResult) {
@@ -585,4 +593,14 @@ function showFormError(submitBtn, formResult) {
   submitBtn.disabled = false;
   formResult.textContent = 'Something went wrong. Please email melinnsystems.tech@gmail.com';
   formResult.className = 'form-result form-result--error';
-  setTime
+  setTimeout(function() {
+    submitBtn.textContent = 'Send Message';
+    submitBtn.style.cssText = '';
+    formResult.textContent = '';
+    formResult.className = 'form-result';
+  }, 5000);
+}
+</script>
+
+</body>
+</html>
